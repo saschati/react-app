@@ -9,6 +9,10 @@
 - [docker-compose](https://docs.docker.com/compose/install/)
 <hr/>
 
+## Download all modules
+
+```git submodule update --init --recursive```
+
 ## Init project
 
 ```make init```
@@ -16,7 +20,7 @@
 ## Host info
 
 FRONTEND: [http://localhost/](http://localhost/) <br />
-FRONTEND: [http://analyze.localhost/](http://analyze.localhost/)
+FRONTEND ANALYZE: [http://analyze.localhost/](http://analyze.localhost/)
 
 ### Available commands
 ```make help```
