@@ -1,3 +1,4 @@
 [submodule "frontend"]
 	path = frontend
 	url = git@github.com:saschati/react-skeleton.git
+	branch = master
