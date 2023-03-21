@@ -80,8 +80,8 @@ frontend-fix: ## Run lint fixer
 frontend-logs: ## Show logs
 	docker-compose logs --follow frontend-node
 
-frontend-analize-refresh: ## Refresh build for analize
-	docker-compose exec frontend-analize yarn build
+frontend-analyze-refresh: ## Refresh build for analyze
+	docker-compose exec frontend-analyze yarn build
 
 frontend-analize-logs: ## Show logs analize
 	docker-compose logs --follow frontend-analize

@@ -49,7 +49,7 @@ services:
 
     frontend-analyze:
        build:
-           context: frontend/docker/development/node-cli
+           context: frontend/docker/development/node
        volumes:
            - ./frontend:/app
        command: sh -c "until [ -f .ready ] ; do sleep 1 ; done && yarn analyze"
@@ -58,7 +58,7 @@ services:
            - default           
        labels:
            - traefik.enable=true
-           - traefik.docker.network=analyze-public
+           - traefik.docker.network=traefik-public
            - traefik.http.routers.frontend-analyze.rule=Host(`analyze.localhost`)
            - traefik.http.routers.frontend-analyze.entryPoints=web
            - traefik.http.services.frontend-analyze.loadbalancer.server.port=8888
@@ -82,6 +82,7 @@ services:
             <<: *front-env-variables
         volumes:
             - ./frontend:/app
+            - /dev/null:/app/.git
 
 networks:
     traefik-public:
