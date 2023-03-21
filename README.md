@@ -1,4 +1,4 @@
-<h1 align="center">Curriculum Vitae Olexander Grigorchyk</h1>
+<h1 align="center">React App</h1>
 <hr/>
 
 ## Global dependencies
@@ -15,7 +15,7 @@
 
 ## Host info
 
-FRONTEND: [http://localhost/](http://localhost/)
+FRONTEND: [http://localhost/](http://localhost/) <br />
 FRONTEND: [http://analyze.localhost/](http://analyze.localhost/)
 
 ### Available commands
